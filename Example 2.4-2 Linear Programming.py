@@ -33,7 +33,7 @@ beq = [800, 750, 600, 500]
 # We use the recommended 'highs' method for modern, fast execution
 res = linprog(c, A_ub=A, b_ub=b, A_eq=Aeq, b_eq=beq, method='highs')
 
-# 5. Display the results
+# 6. Display the results
 if res.success:
     print("Optimization successful!")
     print(f"Optimal value for x1: {res.x[0]:.1f}")
