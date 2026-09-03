@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.optimize import linprog
 
+# Documentation for linprog: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html
 
 # We want to minimize C = 50 I1 + 50 I2 + 50 I_3 + 200 H1 + 200 H2 + 200 H3 + 200 H4 + 400 F1 + 400 F2 + 400 F3 + 400 F4
 

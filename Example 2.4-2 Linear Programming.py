@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.optimize import linprog
 
+# Documentation for linprog: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html
+
 # 1. Define the objective function coefficients
 # We want to maximize P = 30 x1 + 40 x2 + 20 x3 + 10 x4 - 15 s1 - 20 s2 -10 s3 - 8 s4
 # which is equivalent to minimizing its negative

@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.optimize import linprog
 
+# Documentation for linprog: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html
+
 # 1. Define the objective function coefficients
 # We want to minimize C = 50 x1 + 45 x2 + 55 x3 + 48 x4 + 52 x5 + 50 x6 + 8 I1 + 8 I2 + 8 I3 + 8 I4 + 8 I5 + 8 I6
 c = [50, 45, 55, 48, 52, 50, 8, 8, 8, 8, 8, 8]
