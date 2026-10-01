@@ -31,7 +31,7 @@ res = linprog(c, A_eq=Aeq, b_eq=beq, method='highs')
 if res.success:
     print("Optimization successful!")
     print(f"Optimal value for x11: {res.x[0]:.1f}")
-    print(f"Optimal value for x2: {res.x[1]:.1f}")
+    print(f"Optimal value for x12: {res.x[1]:.1f}")
     print(f"Optimal value for x21: {res.x[2]:.1f}")
     print(f"Optimal value for x22: {res.x[3]:.1f}")
     print(f"Optimal value for x31: {res.x[4]:.1f}")
