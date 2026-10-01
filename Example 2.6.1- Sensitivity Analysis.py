@@ -32,8 +32,9 @@ if res.success:
     print(f"Optimal value for x2: {res.x[1]:.1f}")
     # We negate the result back to get the maximum value
     print(f"Maximum value of the objective function: {-res.fun:.1f}")
+    # See https://docs.scipy.org/doc/scipy/reference/optimize.linprog-highs.html for documentation!
     print("\nShadow prices (marginals) for constraints:")
-    print("Constraint 1 (2x1 + x2 <= 8):", -res.ineqlin.marginals[0])
-    print("Constraint 2 (x1 + 3x2 <= 8):", -res.ineqlin.marginals[1])
+    print("Constraint 1 (2x1 +  x2 <= 8):", -res.ineqlin.marginals[0])
+    print("Constraint 2 ( x1 + 3x2 <= 8):", -res.ineqlin.marginals[1])
 else:
     print("Optimization failed:", res.message)
